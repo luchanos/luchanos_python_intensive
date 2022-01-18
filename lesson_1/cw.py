@@ -7,6 +7,12 @@ TOKEN = env.str("TOKEN")
 
 bot = TeleBot(TOKEN)
 
+
+@bot.message_handler(commands=["start"])
+def start(message):
+    c = 1
+
+
 while True:
     print("Bot starting!")
     try:
